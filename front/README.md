@@ -1,73 +1,79 @@
-# Welcome to your Lovable project
+# SynergyAI Frontend
 
-## Project info
+The React frontend for the SynergyAI autonomous DeFi agent platform.
 
-**URL**: https://lovable.dev/projects/40198be6-0457-46f8-9ceb-37da8b6d13e5
+## Tech Stack
 
-## How can I edit this code?
+- **React 18** - UI library
+- **Vite** - Build tool & dev server
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **shadcn/ui** - UI components
+- **wagmi + RainbowKit** - Wallet connection
+- **React Query** - Data fetching
+- **Framer Motion** - Animations
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/40198be6-0457-46f8-9ceb-37da8b6d13e5) and start prompting.
+- Node.js 18+
+- npm or bun
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
+```bash
+# Install dependencies
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Environment Variables
 
-## What technologies are used for this project?
+Create a `.env` file in the frontend directory:
 
-This project is built with:
+```env
+VITE_API_URL=http://localhost:3001
+VITE_WALLETCONNECT_PROJECT_ID=your_project_id
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Structure
 
-## How can I deploy this project?
+```
+src/
+├── components/     # Reusable UI components
+│   ├── ui/         # shadcn/ui components
+│   └── layout/     # Layout components
+├── hooks/          # Custom React hooks
+├── lib/            # Utilities and API client
+├── pages/          # Page components
+├── config/         # App configuration
+├── providers/      # React context providers
+└── store/          # State management
+```
 
-Simply open [Lovable](https://lovable.dev/projects/40198be6-0457-46f8-9ceb-37da8b6d13e5) and click on Share -> Publish.
+## Pages
 
-## Can I connect a custom domain to my Lovable project?
+| Route        | Description                   |
+| ------------ | ----------------------------- |
+| `/`          | Landing page                  |
+| `/dashboard` | Command center with metrics   |
+| `/identity`  | Identity verification         |
+| `/agents`    | Agent deployment & management |
+| `/activity`  | Transaction history           |
+| `/liquidity` | Liquidity pools               |
+| `/settings`  | User settings                 |
 
-Yes, you can!
+## Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+See main README for deployment instructions with Vercel.

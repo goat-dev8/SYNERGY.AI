@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <defs>
+        <!-- Gradient for main shape -->
+        <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#8B5CF6" />
+            <stop offset="50%" style="stop-color:#06B6D4" />
+            <stop offset="100%" style="stop-color:#10B981" />
+        </linearGradient>
+        <!-- Glow effect -->
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="8" result="coloredBlur" />
+            <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <!-- Inner gradient -->
+        <linearGradient id="innerGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#6366F1" />
+            <stop offset="100%" style="stop-color:#22D3EE" />
+        </linearGradient>
+    </defs>
+
+    <!-- Background circle -->
+    <circle cx="256" cy="256" r="240" fill="#0F0F23" />
+
+    <!-- Outer ring -->
+    <circle cx="256" cy="256" r="220" fill="none" stroke="url(#mainGrad)" stroke-width="8"
+        opacity="0.6" />
+
+    <!-- AI Brain/Network pattern -->
+    <g filter="url(#glow)">
+        <!-- Central hexagon representing AI core -->
+        <path d="M256 100 L336 148 L336 244 L256 292 L176 244 L176 148 Z"
+            fill="none" stroke="url(#mainGrad)" stroke-width="6" />
+
+        <!-- S shape for Synergy -->
+        <path
+            d="M200 180 
+             C200 160, 240 140, 280 160
+             C320 180, 320 200, 280 220
+             C240 240, 200 260, 200 280
+             C200 320, 260 340, 312 320"
+            fill="none" stroke="url(#innerGrad)" stroke-width="12" stroke-linecap="round" />
+
+        <!-- Neural connection dots -->
+        <circle cx="176" cy="148" r="12" fill="#8B5CF6" />
+        <circle cx="336" cy="148" r="12" fill="#06B6D4" />
+        <circle cx="336" cy="244" r="12" fill="#10B981" />
+        <circle cx="176" cy="244" r="12" fill="#22D3EE" />
+        <circle cx="256" cy="100" r="12" fill="#A855F7" />
+        <circle cx="256" cy="292" r="12" fill="#14B8A6" />
+
+        <!-- Connecting lines (neural network) -->
+        <line x1="176" y1="148" x2="256" y2="196" stroke="#8B5CF6" stroke-width="2" opacity="0.5" />
+        <line x1="336" y1="148" x2="256" y2="196" stroke="#06B6D4" stroke-width="2" opacity="0.5" />
+        <line x1="336" y1="244" x2="256" y2="196" stroke="#10B981" stroke-width="2" opacity="0.5" />
+        <line x1="176" y1="244" x2="256" y2="196" stroke="#22D3EE" stroke-width="2" opacity="0.5" />
+    </g>
+
+    <!-- Bottom text accent -->
+    <text x="256" y="400" font-family="Arial, sans-serif" font-size="48" font-weight="bold"
+        fill="url(#mainGrad)" text-anchor="middle">SYNERGY</text>
+    <text x="256" y="440" font-family="Arial, sans-serif" font-size="32" font-weight="bold"
+        fill="#06B6D4" text-anchor="middle">.AI</text>
+</svg>
