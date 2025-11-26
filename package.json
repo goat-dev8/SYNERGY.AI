@@ -1,0 +1,32 @@
+{
+  "name": "synergyai",
+  "version": "1.0.0",
+  "description": "SynergyAI - Sovereign Agentic Liquidity Protocol on Polygon",
+  "private": true,
+  "workspaces": [
+    "front",
+    "contracts",
+    "agent"
+  ],
+  "scripts": {
+    "dev:front": "npm run dev --workspace=front",
+    "dev:agent": "npm run dev --workspace=agent",
+    "build:front": "npm run build --workspace=front",
+    "build:agent": "npm run build --workspace=agent",
+    "compile:contracts": "npm run compile --workspace=contracts",
+    "deploy:contracts": "npm run deploy --workspace=contracts",
+    "test:contracts": "npm run test --workspace=contracts",
+    "install:all": "npm install && npm install --workspaces"
+  },
+  "keywords": [
+    "defi",
+    "polygon",
+    "katana",
+    "privado-id",
+    "goat-sdk",
+    "ai-agents",
+    "buildathon"
+  ],
+  "author": "SynergyAI Team",
+  "license": "MIT"
+}

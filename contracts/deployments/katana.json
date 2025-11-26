@@ -1,0 +1,10 @@
+{
+  "network": "katana",
+  "chainId": 747474,
+  "deployer": "0xe1641A049381149AFAacef386ee58fDA5ad9Be32",
+  "timestamp": "2025-11-25T22:46:12.913Z",
+  "contracts": {
+    "SovereignAgentRegistry": "0xcF28F960aA85b051D030374B1ACd14668abaAf3e",
+    "SampleAgentWallet": "0x4E55fcE89F5f01262091587f30dE65b1DF669c7E"
+  }
+}

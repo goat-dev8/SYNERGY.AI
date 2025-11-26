@@ -1,0 +1,173 @@
+# =====================================================
+# SYNERGY.AI - DeFi Autonomous Agent Platform
+# =====================================================
+
+# =====================================================
+# 🔐 SECURITY - NEVER COMMIT THESE FILES!
+# =====================================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+private/
+**/private-keys/
+
+# Agent Private Keys - CRITICAL!
+agent/.env
+agent/keys/*.json
+contracts/.env
+front/.env
+
+# =====================================================
+# 📦 Dependencies
+# =====================================================
+node_modules/
+.pnp
+.pnp.js
+.yarn/
+package-lock.json
+yarn.lock
+bun.lockb
+
+# =====================================================
+# 🔨 Build Outputs
+# =====================================================
+dist/
+build/
+out/
+.output/
+*.tsbuildinfo
+.next/
+.nuxt/
+.vercel/
+.turbo/
+
+# =====================================================
+# ⛓️ Hardhat / Smart Contracts
+# =====================================================
+cache/
+artifacts/
+typechain-types/
+deployments/localhost/
+.openzeppelin/
+coverage/
+coverage.json
+gasReporterOutput.json
+
+# =====================================================
+# 🖥️ Frontend / Vite
+# =====================================================
+front/dist/
+front/.vite/
+*.local
+
+# =====================================================
+# 🤖 Agent Backend
+# =====================================================
+agent/dist/
+agent/keys/
+
+# =====================================================
+# 📝 Logs
+# =====================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =====================================================
+# 🧪 Testing
+# =====================================================
+coverage/
+.nyc_output/
+*.lcov
+test-results/
+playwright-report/
+playwright/.cache/
+
+# =====================================================
+# 💻 IDE & Editors
+# =====================================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*~
+.project
+.classpath
+.settings/
+
+# =====================================================
+# 🍎 OS Generated Files
+# =====================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# =====================================================
+# 🌐 Ngrok & Local Tunneling
+# =====================================================
+ngrok.yml
+*.ngrok*
+
+# =====================================================
+# 📊 Miscellaneous
+# =====================================================
+*.tgz
+*.tar.gz
+*.zip
+.cache/
+.parcel-cache/
+.temp/
+.tmp/
+temp/
+tmp/
+
+# =====================================================
+# 📋 Documentation Build
+# =====================================================
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+storybook-static/
+
+# =====================================================
+# 🔄 Runtime Data
+# =====================================================
+pids
+*.pid
+*.seed
+*.pid.lock
+.node_repl_history
+
+# =====================================================
+# 📈 Optional Files to Keep
+# =====================================================
+# Keep example files
+!.env.example
+!**/.env.example
+.temp/
+.tmp/
+
+
+plan-propmt.md
