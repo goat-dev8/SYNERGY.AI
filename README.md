@@ -13,7 +13,7 @@
 
 **Deploy your own sovereign AI agent to execute DeFi strategies autonomously on Katana Network**
 
-[🌐 Live Demo](https://synergy.ai) · [📖 Documentation](https://docs.synergy.ai) · [🐦 Twitter](https://twitter.com/synergyai)
+[🌐 Live Demo]([https://synergy.ai](https://privy-flow.vercel.app/)) · [📖 Documentation](https://docs.synergy.ai) · [🐦 Twitter](https://twitter.com/synergyai)
 
 ---
 
